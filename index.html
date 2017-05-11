@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					еда
+					<input type="text" id="red">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					жилье
+					<input type="text" id="green">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					кафе
+					<input type="text" id="orange">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					гигиена
+					<input type="text" id="#0b82e8" class="a0b82e8">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div class="row">
+					<div class="wraper_data mt">
+						машина
+						<input type="text" id="#a1dc11" class="a1dc11"">
+						<input type="button" class="bt" value="Ввести">
+					</div>
+				</div>
+				<div class="row">
+					<div class="wraper_data mtl">
+						транспорт
+						<input type="text" id="#dc119e" class="dc119e">
+						<input type="button" class="bt" value="Ввести">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-6">
+				<div class="canvas_date">
+					<canvas height='480' width='480' id='Canvas'>Обновите браузер</canvas>
+					<h2 id="budget_full">Бюджет</h2>
+					<h2 id="cost">Расходы 0руб.</h2>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="row">
+					<div class="wraper_data mt">
+						спорт
+						<input type="text" id="#1121dc" class="a1121dc">
+						<input type="button" class="bt" value="Ввести">
+					</div>
+				</div>
+				<div class="row">
+					<div class="wraper_data">
+						здровье
+						<input type="text" id="#47ff47" class="a47ff47">
+						<input type="button" class="bt" value="Ввести">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					развлечения
+					<input type="text" id="#11dcc9" class="a11dcc9">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					Такси
+					<input type="text" id="#2e504d" class="a2e504d">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">одежда
+					<input type="text" id="#35183a" class="a35183a">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div class="wraper_data">
+					Связь
+					<input type="text" id="#f44336" class="f44336">
+					<input type="button" class="bt" value="Ввести">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="budget_value">
+					<label>
+						<span>Введите бюджет</span><br>
+						<input type="text" id="budget">
+						<input type="button" id="budget_button" value="Ввести бюджет">
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row calend">
+			<div class="col-md-12">
+				<div class="calender">
+					<input type="text" id="calender" placeholder="Календарь">
+					<input type="button" value="Посмотреть данные" id="getValue">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="settings">
+		<div id="wraper">
+			<h2>Деталицазия расходов:</h2>
+			<span id="exit">X</span>
+			<div id="wrap_list"></div>
+		</div>
+	</div>
+	<div class="hidden"></div>
+	<!-- Mandatory for Responsive Bootstrap Toolkit to operate -->
+	<div class="device-xs visible-xs"></div>
+	<div class="device-sm visible-sm"></div>
+	<div class="device-md visible-md"></div>
+	<div class="device-lg visible-lg"></div>
+	<!-- end mandatory -->
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="libs/bootstrap-toolkit/bootstrap-toolkit.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/init.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
